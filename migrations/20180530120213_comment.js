@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
     table
       .integer('post_id')
       .references('post.id')
-      .onDelete('cascade');
+      .onDelete('cascade')
   });
 };
 
