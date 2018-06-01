@@ -1,4 +1,4 @@
-const pg = require('./knexConfig.js')
+const pg = require('./knexConfig')
 
 function getProfiles() {
   return pg('redditTest')
@@ -7,6 +7,6 @@ function getProfiles() {
     .orderBy('id', 'desc')
 }
 
-module.export = {
+module.exports = {
     getProfiles
 }
