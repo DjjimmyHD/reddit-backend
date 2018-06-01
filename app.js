@@ -3,9 +3,13 @@ const app = express()
 const bodyParser = require('body-parser')
 const port = 3000
 const cors = require('cors')
+const profile = require('./routes/profile.js')
+
 
 
 app.use(cors())
+
+app.use('/profile', profile)
 
 app.use(bodyParser.urlencoded({
     extended: false
